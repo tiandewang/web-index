@@ -55,9 +55,7 @@
             <li><a href="#"><img src="images/banner05.jpg"></a></li>
         </ul>
         <ol> <!--里面存放小圆点-->
-            <!--<li>1</li>-->
-            <!--<li>2</li>-->
-            <!--<li>3</li>-->
+            <!--<li></li>-->
         </ol>
     </div>
     <div class="focusD" id="arr">
@@ -66,25 +64,28 @@
     </div>
 </div>
 <!--滚动新闻-->
-<div class="container flowNews">
-    <div class="flash-hd clear-float">
+<div class="container flowNews POS-R">
+    <div class="flowNewsImg">
+        <img src="./images/news.png">
+    </div>
+    <span class="flowNewstitle">德展新闻：</span>
+    <div class="flowNewsUl">
         <ul>
-            <li>
-                <p>
-                    <div> <img src="images/news.png"></div>
-
-                    <div>
-                    德展新闻：
-                    <span>新常态 新格局 新视野 ——德展集团上海分公司服务全面升级</span>
-                    </div>
-                </p>
-            </li>
-            <li>
-                <span><</span>
-                <span>></span>
-            </li>
-            <li><a class="font" href="#">查看全部</a></li>
+            <li>这个青年节属于你</li>
+            <li>喜迎元宵</li>
+            <li>圣诞，许你一世星空</li>
+            <li>端午将至，恭祝您吉祥安康！</li>
+            <li>中秋月圆夜-月亮代表我的心</li>
+            <li>新常态 新格局 新视野 ——德展集团上海分公司服务全面升级</li>
         </ul>
+    </div>
+    <div class="flowNewsFocus">
+        <!--<>-->
+        <span><</span>
+        <span>></span>
+    </div>
+    <div class="flowNewsBoth">
+        <a class="font" href="#">查看全部</a>
     </div>
 </div>
 <!--news-->
@@ -106,13 +107,13 @@
                 <li><a href="#">全球最大嘉年华游轮集团商业合作伙伴</a></li>
             </ul>
         </div>
-        <!--<div class="video left">-->
-            <!--<video autoplay controls loop height="420">-->
-                <!--<source src="video/video.mp4">-->
-                <!--<source src="video/video.ogg">-->
-                <!--您的浏览器版本太低-->
-            <!--</video>-->
-        <!--</div>-->
+        <div class="video left">
+            <video autoplay controls loop height="420">
+                <source src="video/video.mp4">
+                <source src="video/video.ogg">
+                您的浏览器版本太低
+            </video>
+        </div>
         <div class="row-r right">
             <div class="telephoto">
                 <p>全国统一服务热线</p>
@@ -227,7 +228,7 @@
     </div>
 </div>
 <!--ELITE honor-->
-<div class="honor container POS-R ">
+<div class="honor container POS-R " id="honorId">
     <div class="honor-hd case-hd">
         <ul>
             <li class="specialLi"><a href="#">ELITE 德展精英</a></li>
@@ -241,50 +242,50 @@
     <div class="honor-bd clear-float" id="honorBox">
         <ul>
             <li>
-                <a href="#"><img src="images/fengyan.png"></a>
+                <a href="#"><img src="./images/fengyan.png"></a>
                 <div>
                     <p><span>冯岩</span>/德展北京<br>首席会展设计师</p>
                 </div>
             </li>
             <li>
-                <a href="#"><img src="images/gaoqi.png"></a>
+                <a href="#"><img src="./images/gaoqi.png"></a>
                 <div>
                     <p><span>高旗</span>/德展上海<br>专家级会展设计师</p>
                 </div>
             </li>
             <li>
-                <a href="#"><img src="images/chenbin.png"></a>
+                <a href="#"><img src="./images/chenbin.png"></a>
                 <div>
                     <p><span>陈斌</span>/德展北京<br>专家级会展设计师</p>
                 </div>
             </li>
             <li>
-                <a href="#"><img src="images/zhangliqi.png"></a>
+                <a href="#"><img src="./images/zhangliqi.png"></a>
                 <div>
                     <p><span>张礼庆</span>/德展北京<br>专家级会展设计师</p>
                 </div>
             </li>
             <li>
-                <a href="#"><img src="images/tangyi.png"></a>
+                <a href="#"><img src="./images/tangyi.png"></a>
                 <div>
                     <p><span>唐艺</span>/德展北京<br>专家级会展设计师</p>
                 </div>
             </li>
             <li>
-                <a href="#"><img src="images/zhuheguo.png"></a>
+                <a href="#"><img src="./images/zhuheguo.png"></a>
                 <div>
                     <p><span>朱和国</span>/德展上海<br>专家级会展设计师</p>
                 </div>
             </li>
             <li>
-                <a href="#"><img src="images/humengnong.png"></a>
+                <a href="#"><img src="./images/humengnong.png"></a>
                 <div>
                     <p><span>胡梦农</span>/德展上海<br>专家级会展设计师</p>
                 </div>
             </li>
         </ul>
     </div>
-    <div class="focusF clear-float">
+    <div class="focusF clear-float" id="focusFId">
         <span class="left" id="honorLeft"><</span>
         <span class="right" id="honorRight">></span>
     </div>
@@ -346,51 +347,51 @@
     </div>
 </div>
 <!--count-->
-<div class="co unt">
-    <a href="#">
-        <img src="images/jisuanqi.png">
-        <p>免费报价</p>
-    </a>
-</div>
+<!--<div class="count">-->
+    <!--<a href="#">-->
+        <!--<img src="images/jisuanqi.png">-->
+        <!--<p>免费报价</p>-->
+    <!--</a>-->
+<!--</div>-->
 <!--contact-->
-<div class="contact">
-    <ul>
-        <li>
-            <a href="#">
-                <img src="images/zaixianzixun.png">
-                <p class="green">会展专家</p>
-                <p>在线咨询</p>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img src="images/zaixiankefu.png">
-                <p class="blue">24小时</p>
-                <p>在线客服</p>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img class="mar-top" src="images/fenxiang.png">
-                <p>分享到</p>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <img class="mar-top" src="images/fanhui.png">
-                <p class="white">返回顶部</p>
-            </a>
-        </li>
-    </ul>
-</div>
+<!--<div class="contact">-->
+    <!--<ul>-->
+        <!--<li>-->
+            <!--<a href="#">-->
+                <!--<img src="images/zaixianzixun.png">-->
+                <!--<p class="green">会展专家</p>-->
+                <!--<p>在线咨询</p>-->
+            <!--</a>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<a href="#">-->
+                <!--<img src="images/zaixiankefu.png">-->
+                <!--<p class="blue">24小时</p>-->
+                <!--<p>在线客服</p>-->
+            <!--</a>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<a href="#">-->
+                <!--<img class="mar-top" src="images/fenxiang.png">-->
+                <!--<p>分享到</p>-->
+            <!--</a>-->
+        <!--</li>-->
+        <!--<li>-->
+            <!--<a href="#">-->
+                <!--<img class="mar-top" src="images/fanhui.png">-->
+                <!--<p class="white">返回顶部</p>-->
+            <!--</a>-->
+        <!--</li>-->
+    <!--</ul>-->
+<!--</div>-->
 
 
 
 
 
 
-<script type="text/javascript" src="js.js"></script>
-
+<script type="text/javascript" src="./js.js"></script>
+<script type="text/javascript" src="./js2.js"></script>
 <!--<script>-->
 
 <!--</script>-->

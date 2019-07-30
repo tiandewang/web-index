@@ -1,9 +1,9 @@
-﻿window.document.onload=function () {
-    
-}
+﻿// window.document.onload=function () {
+//
+// }
+// $(document).ready();
 
-
-//轮播图全部函数
+//nav轮播图
 var index = 0;
 //获取最外面的div
 var box = my$("box");
@@ -45,30 +45,39 @@ for (var i = 0; i < list.length; i++) {
 olObj.children[0].className = "current";
 //克隆ol中第一个li放到最后一个
 ulObj.appendChild(ulObj.children[0].cloneNode(true));
-var timeId = setInterval(clickHandle, 3000);
-my$("box").onmouseover = function () {
-    arr.style.display = "block";
-    clearInterval(timeId);
-};
+
 //点击右边按钮
 my$("right").onclick = clickHandle;
 
+// var clickTime = 0;
+// var clickTimeInterval=null;
+// function done() {
+//     if(clickTime==0){
+//         clearInterval(clickTimeInterval);
+//     }else{
+//         clickTime--;
+//     }
+// }
 function clickHandle() {
-    if (index == ulObj.children.length - 1) {
-        ulObj.style.left = 0 + "px";
-        index = 0;
-    }
-    index++;
-    animate(ulObj, -index * imgWidth);
-    if (index == list.length - 1) {
-        olObj.children[0].className = "current";
-        olObj.children[olObj.children.length - 1].className = "";
-    } else {
-        for (var i = 0; i < olObj.children.length; i++) {
-            olObj.children[i].className = "";
+    // if (clickTime == 0) {
+        if (index == ulObj.children.length - 1) {
+            ulObj.style.left = 0 + "px";
+            index = 0;
         }
-        olObj.children[index].className = "current";
-    }
+        index++;
+        animate(ulObj, -index * imgWidth);
+        if (index == list.length - 1) {
+            olObj.children[0].className = "current";
+            olObj.children[olObj.children.length - 1].className = "";
+        } else {
+            for (var i = 0; i < olObj.children.length; i++) {
+                olObj.children[i].className = "";
+            }
+            olObj.children[index].className = "current";
+        }
+        // clickTime=Math.ceil(imgWidth/9*0.01);
+        // clickTimeInterval=setInterval(done,1000);
+    // }
 };
 //点击左边按钮
 my$("left").onclick = function () {
@@ -82,6 +91,13 @@ my$("left").onclick = function () {
         olObj.children[i].className = "";
     }
     olObj.children[index].className = "current";
+};
+
+var timeId = setInterval(clickHandle, 3000);
+
+my$("box").onmouseover = function () {
+    arr.style.display = "block";
+    clearInterval(timeId);
 };
 my$("box").onmouseout = function () {
     arr.style.display = "none";
@@ -110,22 +126,44 @@ function my$(id) {
 }
 
 
-// var honorIndex = 0;
-// var honorBox = my$("honorBox");
-// var honorBoxWidth = honorBox.offsetWidth;
-// var honorUlObj = honorBox.children[0];
-// var honorList = honorUlObj.children;
-//
+//ELITE honor轮播
+var honorIndex = 0;
+var honorBox = my$("honorBox");
+var honorUlObj = honorBox.children[0];
+var honorList = honorUlObj.children;
+var honorBoxWidth = honorList[0].offsetWidth;
+var lilength=honorList.length;
 // honorUlObj.appendChild(honorUlObj.children[0].cloneNode(true));
-// // my$("honorRight").onclick = honorClickHandle;
-// my$("honorRight").onclick = alert(123456);
-//
-// function honorClickHandle() {
-//     if (honorIndex == honorList.length - 1) {
-//         honorUlObj.style.left = 0 + "px";
-//         honorIndex = 0;
-//     }
-//     honorIndex++;
-//     animate(honorUlObj, -honorIndex * honorBoxWidth);
-//
-// }
+//复制ul中的li元素
+for(i=0;i<lilength;i++){
+    honorUlObj.appendChild(honorUlObj.children[i].cloneNode(true));
+    // console.log(i);
+}
+// honor点击向右移动
+my$("honorRight").onclick = honorRightClickHandle;
+function honorRightClickHandle() {
+    if (honorIndex == lilength) {
+        honorUlObj.style.left = 0 + "px";
+        honorIndex = 0;
+    }
+    honorIndex++;
+    animate(honorUlObj, -honorIndex * honorBoxWidth);
+}
+//honor点击向左移动
+my$("honorLeft").onclick = honorLeftClickHandle;
+    function honorLeftClickHandle() {
+    if (honorIndex == 0) {
+        honorIndex = lilength - 1;
+        honorUlObj.style.left = -honorIndex * honorBoxWidth + "px";
+    }
+        honorIndex--;
+    animate(honorUlObj, -honorIndex * honorBoxWidth);
+}
+//鼠标移动到honnor部分显示移动箭头
+my$("honorId").onmouseover=function () {
+    document.getElementById("focusFId").style.display="block";
+}
+//鼠标移动到honnor部分隐藏移动箭头
+my$("honorId").onmouseout=function () {
+    document.getElementById("focusFId").style.display="none";
+}
