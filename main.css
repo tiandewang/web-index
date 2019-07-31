@@ -17,6 +17,7 @@ a {
 .left{
     float: left;
     display: inline-block;
+
 }
 .right{
     float: right;
@@ -44,7 +45,7 @@ a {
 }
 .POS-R {
     position: relative;
-    z-index: 1;
+    z-index: 0;
 }
 .logo {
     width: 236px;
@@ -218,25 +219,29 @@ a {
     position: absolute;
     top: 0;
     left: 135px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    /*overflow: hidden;*/
+    /*white-space: nowrap;*/
+    /*text-overflow: ellipsis;*/
 }
 .flowNewsUl li{
-    line-height: 45px;
-    margin-top: 2px;
+    height: 48px;
+    line-height: 48px;
 }
 .flowNewsFocus{
     width: 46px;
     height: 17px;
-    line-height: 17px;
     background-color: #cfcfcf;
+    line-height: 17px;
+    text-align: center;
     position: absolute;
     top: 18px;
     left: 816px;
 }
 .flowNewsFocus span{
-    margin-left: 5px;
+    width: 23px;
+    /*height: 17px;*/
+    /*background-color: #cfcfcf;*/
+    cursor: pointer;
 }
 .flowNewsBoth{
     width: 67px;
@@ -256,13 +261,17 @@ a {
     height: 376px;
     padding: 46px 0 120px;
     border-bottom: 4px solid #c3c3c3;
-    /*background-color: pink;*/
     line-height: 33px;
+}
+.row{
+    /*height: 100%;*/
+    /*background-color: pink;*/
+    /*overflow: hidden;*/
 }
 .row-l{
     width: 290px;
-    /*background-color: pink;*/
     margin-right: 25px;
+    /*background-color: pink;*/
 }
 .row-l li a{
     font-size: 1em;
@@ -286,7 +295,7 @@ a {
     padding-top: 5px;
     padding-left: 22px;
     color: #7f7f7f;
-    line-height: 31px;
+    line-height: 30px;
 }
 .telephoto p{
     font-size: 16px;
@@ -607,7 +616,7 @@ a {
      color: #8D8582;
  }
 .contact li img{
-    margin-top: 5%;
+    margin-top: 6%;
 }
 .contact .mar-top{
     margin-top: 20%;
@@ -615,13 +624,13 @@ a {
 .contact li:nth-child(4){
     background-color: #8D8582;
 }
-.contact .green{
+.green{
     color: #60bd05;
 }
-.contact .blue{
+.blue{
     color: #0284cf;
 }
-.contact .white{
+.white{
     color: #ffffff;
 }
 

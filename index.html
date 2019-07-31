@@ -11,7 +11,7 @@
 <body>
 
 <!--header-->
-<div class="nav-fix-top">
+<div class="nav-fix-top" id="Top">
     <div class="container POS-R">
         <div class="logo">
             <a href="#"><img src="images/logo.png" class="img-responsive"></a>
@@ -64,12 +64,12 @@
     </div>
 </div>
 <!--滚动新闻-->
-<div class="container flowNews POS-R">
+<div class="container flowNews POS-R" id="flowNewsId">
     <div class="flowNewsImg">
         <img src="./images/news.png">
     </div>
     <span class="flowNewstitle">德展新闻：</span>
-    <div class="flowNewsUl">
+    <div class="flowNewsUl" id="flowNewsUlBox">
         <ul>
             <li>这个青年节属于你</li>
             <li>喜迎元宵</li>
@@ -79,10 +79,10 @@
             <li>新常态 新格局 新视野 ——德展集团上海分公司服务全面升级</li>
         </ul>
     </div>
-    <div class="flowNewsFocus">
+    <div class="flowNewsFocus" id="flowNewsFocusId">
         <!--<>-->
-        <span><</span>
-        <span>></span>
+        <span id="flowNewsDown"><</span>
+        <span id="flowNewsUp">></span>
     </div>
     <div class="flowNewsBoth">
         <a class="font" href="#">查看全部</a>
@@ -93,11 +93,11 @@
     <div class="row clear-float">
         <div class="row-l left">
             <ul>
-                <li><a href="#">北京建峰装饰设计院—展陈设计研究分院</a></li>
+                <li><a href="./Untitled-1.html" target="_blank">北京建峰装饰设计院—展陈设计研究分院</a></li>
                 <li><a href="#">中国会展经济研究会副会长单位</a></li>
                 <li><a href="#">中国展陈工程企业一级资质</a></li>
                 <li><a href="#">中国展览馆协会会员</a></li>
-                <li><a href="/uiop">中国展览工程施工一级资质</a></li>
+                <li><a href="#">中国展览工程施工一级资质</a></li>
                 <li><a href="#">ISO9001：2000质量管理体系认证</a></li>
                 <li><a href="#">ISO14001：2004环境管理体系认证</a></li>
                 <li><a href="#">中国室内装饰协会会员</a></li>
@@ -108,9 +108,10 @@
             </ul>
         </div>
         <div class="video left">
-            <video autoplay controls loop height="420">
-                <source src="video/video.mp4">
-                <source src="video/video.ogg">
+            <!--width="560"-->
+            <video autoplay controls loop height="420" width="560">
+                <source src="./video/video.mp4">
+                <source src="./video/video.ogg">
                 您的浏览器版本太低
             </video>
         </div>
@@ -127,35 +128,35 @@
                     <span class="right">86-10-84775977</span>
                     <br>
                     <span>朝阳区望京西路金隅国际大厦F座11层</span>
-                    <img src="images/beijing.png">
+                    <img src="./images/beijing.png">
                 </li>
                 <li>
                     <span class="left">上海</span>
                     <span class="right">86-21-52650268</span>
                     <br>
                     <span>普陀区云岭东路599弄1号楼12层</span>
-                    <img src="images/shanghai.png">
+                    <img src="./images/shanghai.png">
                 </li>
                 <li>
                     <span class="left">香港</span>
                     <span class="right">00852-81324111</span>
                     <br>
                     <span>上環永樂街130號恒樂大廈前座11樓</span>
-                    <img src="images/xianggang.png">
+                    <img src="./images/xianggang.png">
                 </li>
                 <li>
                     <span class="left">深圳</span>
                     <span class="right">86-755-83667686</span>
                     <br>
                     <span>福田区竹子林四路香诗美林3栋8F</span>
-                    <img src="images/shenzhen.png">
+                    <img src="./images/shenzhen.png">
                 </li>
                 <li>
                     <span class="left">太原</span>
                     <span class="right">86-351-2527703</span>
                     <br>
                     <span>小店平阳路426号大和昌业北楼24层</span>
-                    <img src="images/taiyuan.png">
+                    <img src="./images/taiyuan.png">
                 </li>
             </ul>
         </div>
@@ -178,7 +179,7 @@
         <ul>
             <li>
                 <a href="#">
-                    <img src="images/casebd7.png">
+                    <img src="./images/casebd7.png">
                     <div>
                         <p>永久展陈<br>EXHIBITION DESIGN</p>
                     </div>
@@ -186,7 +187,7 @@
             </li>
             <li class="case-bd-li">
                 <a href="#">
-                    <img src="images/casebd8.png">
+                    <img src="./images/casebd8.png">
                     <div>
                         <p>主场运营<br>Home operation</p>
                     </div>
@@ -194,7 +195,7 @@
             </li>
             <li>
                 <a href="#">
-                    <img src="images/casebd9.png">
+                    <img src="./images/casebd9.png">
                     <div>
                         <p>特装搭建<br>Special booth construction</p>
                     </div>
@@ -202,7 +203,7 @@
             </li>
             <li>
                 <a href="#">
-                    <img src="images/casebd10.png">
+                    <img src="./images/casebd10.png">
                     <div>
                         <p>公关传播<br>PR & Media</p>
                     </div>
@@ -210,7 +211,7 @@
             </li>
             <li class="case-bd-li">
                 <a href="#">
-                    <img src="images/casebd11.png">
+                    <img src="./images/casebd11.png">
                     <div>
                         <p>SI店面<br>Si storefront</p>
                     </div>
@@ -218,7 +219,7 @@
             </li>
             <li>
                 <a href="#">
-                    <img src="images/casebd12.png">
+                    <img src="./images/casebd12.png">
                     <div>
                         <p>品牌形象<br>Brand image</p>
                     </div>
@@ -347,43 +348,43 @@
     </div>
 </div>
 <!--count-->
-<!--<div class="count">-->
-    <!--<a href="#">-->
-        <!--<img src="images/jisuanqi.png">-->
-        <!--<p>免费报价</p>-->
-    <!--</a>-->
-<!--</div>-->
+<div class="count">
+    <a href="#">
+        <img src="images/jisuanqi.png">
+        <p>免费报价</p>
+    </a>
+</div>
 <!--contact-->
-<!--<div class="contact">-->
-    <!--<ul>-->
-        <!--<li>-->
-            <!--<a href="#">-->
-                <!--<img src="images/zaixianzixun.png">-->
-                <!--<p class="green">会展专家</p>-->
-                <!--<p>在线咨询</p>-->
-            <!--</a>-->
-        <!--</li>-->
-        <!--<li>-->
-            <!--<a href="#">-->
-                <!--<img src="images/zaixiankefu.png">-->
-                <!--<p class="blue">24小时</p>-->
-                <!--<p>在线客服</p>-->
-            <!--</a>-->
-        <!--</li>-->
-        <!--<li>-->
-            <!--<a href="#">-->
-                <!--<img class="mar-top" src="images/fenxiang.png">-->
-                <!--<p>分享到</p>-->
-            <!--</a>-->
-        <!--</li>-->
-        <!--<li>-->
-            <!--<a href="#">-->
-                <!--<img class="mar-top" src="images/fanhui.png">-->
-                <!--<p class="white">返回顶部</p>-->
-            <!--</a>-->
-        <!--</li>-->
-    <!--</ul>-->
-<!--</div>-->
+<div class="contact">
+    <ul>
+        <li>
+            <a href="#">
+                <img src="./images/zaixianzixun.png">
+                <p class="green">会展专家</p>
+                <p>在线咨询</p>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img src="./images/zaixiankefu.png">
+                <p class="blue">24小时</p>
+                <p>在线客服</p>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <img class="mar-top" src="./images/fenxiang.png">
+                <p>分享到</p>
+            </a>
+        </li>
+        <li>
+            <a href="#Top">
+                <img class="mar-top" src="./images/fanhui.png">
+                <p class="white">返回顶部</p>
+            </a>
+        </li>
+    </ul>
+</div>
 
 
 
