@@ -17,7 +17,6 @@ a {
 .left{
     float: left;
     display: inline-block;
-
 }
 .right{
     float: right;
@@ -55,7 +54,7 @@ a {
     left: 0px;
 }
 .info {
-    width: 102px;
+    /*width: 102px;*/
     height: 14px;
     position: absolute;
     right: 0px;
@@ -219,11 +218,11 @@ a {
     position: absolute;
     top: 0;
     left: 135px;
-    /*overflow: hidden;*/
-    /*white-space: nowrap;*/
-    /*text-overflow: ellipsis;*/
 }
 .flowNewsUl li{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     height: 48px;
     line-height: 48px;
 }
@@ -239,8 +238,6 @@ a {
 }
 .flowNewsFocus span{
     width: 23px;
-    /*height: 17px;*/
-    /*background-color: #cfcfcf;*/
     cursor: pointer;
 }
 .flowNewsBoth{
@@ -263,14 +260,15 @@ a {
     border-bottom: 4px solid #c3c3c3;
     line-height: 33px;
 }
-.row{
-    /*height: 100%;*/
-    /*background-color: pink;*/
-    /*overflow: hidden;*/
-}
 .row-l{
     width: 290px;
     margin-right: 25px;
+    /*background-color: pink;*/
+}
+.row-l li{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
     /*background-color: pink;*/
 }
 .row-l li a{
@@ -308,18 +306,21 @@ a {
     width: 235px;
     margin-top: 10px;
     margin-left: 8px;
-    margin-right: 20px;
     /*display: inline-block;*/
 }
 .address li{
+    width: 100%;
+    padding-right: 45px;
     position: relative;
     line-height: 30px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .address li img{
     position: absolute;
-    right: -30px;
+    right: 20px;
     top: 15px;
-    /*float: right;*/
 }
 /*case show-*/
 .case{
@@ -332,6 +333,7 @@ a {
 }
 .case-hd li{
     float: left;
+    /*display: inline-block;*/
     height: 26px;
     width: 118px;
     text-align: center;
@@ -451,7 +453,6 @@ a {
 /*footer*/
 .footer{
     height: 258px;
-    width: auto;
     background-color: #8D8582;
     border-top: 0 solid ;
 }
@@ -467,9 +468,10 @@ a {
 }
 
 .f-row-l li{
-    float: left;
     width: 84px;
     height: 45px;
+    float: left;
+    display: inline-block;
 }
 .f-row-l .lih{
     height: auto;
@@ -480,6 +482,7 @@ a {
 }
 .f-row-rh li{
     float: left;
+    display: inline-block;
     width: 74px;
     height: 16px;
     margin-top: 10px;
@@ -496,6 +499,7 @@ a {
     position: absolute;
     right: 0;
     top: 105px;
+    z-index: 1;
     border-top: 2px solid #b3afae;
 }
 .f-row-rf{
@@ -508,12 +512,14 @@ a {
     position: absolute;
     left: 370px;
     top: 135px;
+    z-index: 1;
     color: #e6e4e4;
 }
 .f-row-p2{
     position: absolute;
     left: 370px;
     bottom: -5px;
+    z-index: 1;
     color: #e6e4e4;
 }
 .f-row-rf2{
@@ -521,23 +527,27 @@ a {
     position: absolute;
     left: 530px;
     top: 120px;
+    z-index: 1;
 }
 .f-row-p3{
     position: absolute;
     left: 595px;
     top: 135px;
+    z-index: 1;
     color: #e6e4e4;
 }
 .f-row-p4{
     position: absolute;
     left: 595px;
     bottom: -5px;
+    z-index: 1;
     color: #e6e4e4;
 }
 .footlogo{
     position: absolute;
     right: 0;
     top: 30px;
+    z-index: 1;
 }
 .f-row-r1{
     width: 98px;
@@ -547,15 +557,22 @@ a {
     position: absolute;
     right: 0;
     top: 120px;
+    z-index: 1;
+    line-height: 28px;
+    text-align: center;
 }
 .f-row-r1 a{
-    line-height: 28px;
+    font-size: 14px;
     color: #ffffff;
+    /*background-color: pink;*/
 }
-.f-row-r1 a img{
-    margin-top: 5px;
-    margin-left: 5px;
-    margin-right: -7px;
+.f-row-r1 span{
+    display: inline-block;
+    height: 10px;
+    width: 20px;
+    vertical-align: middle;
+    margin-top: -15px;
+    /*background-color: purple;*/
 }
 .f-row-r2{
     width: 98px;
@@ -565,16 +582,22 @@ a {
     position: absolute;
     right: 120px;
     top: 120px;
+    z-index: 1;
     background-color: #ffffff;
+    line-height: 28px;
+    text-align: center;
 }
 .f-row-r2 a{
-    line-height: 28px;
+    font-size: 14px;
     color: #8D8582;
-    margin-left: -7px;
+    /*background-color: pink;*/
 }
-.f-row-r2 a img{
-    margin-top: 3px;
-    margin-left: 12px;
+.f-row-r2 a span{
+    display: inline-block;
+    height: 10px;
+    vertical-align: middle;
+    margin-top: -15px;
+    /*background-color: purple;*/
 }
 .f-row-p5{
     font-size: 12px;
@@ -582,6 +605,7 @@ a {
     position: absolute;
     right: 0;
     bottom: -5px;
+    z-index: 1;
 }
 .count{
     width: 83px;
